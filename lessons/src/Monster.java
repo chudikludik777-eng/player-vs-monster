@@ -4,16 +4,9 @@ public class Monster extends Character {
         super(name, health, damage);
     }
 
-    public void attack(Player target) {
-        System.out.println(name + " бьет кулоком " + target.getName());
-        target.takeDamage(damage);
+    @Override
+    public void attack(Character target) {
+        System.out.println(name + " кусает 🦷 " + target.getName());
+        target.takeDamage(damage * 2);
     }
-
-    public void attack(Boss target) {
-        System.out.println(name + " бьет кулаком " + target.getName());
-        target.takeDamage(damage);
-    }
-
-
-
 }
