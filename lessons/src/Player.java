@@ -7,6 +7,6 @@ public class Player extends Character {
     @Override
     public void attack(Character target) {
         System.out.println(name + " бьёт мечом ⚔️ " + target.getName());
-        target.takeDamage(damage);
+        target.takeDamage(damage * 2);
     }
 }

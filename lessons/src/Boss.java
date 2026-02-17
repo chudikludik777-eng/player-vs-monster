@@ -7,6 +7,6 @@ public class Boss extends Character {
     @Override
     public void attack(Character target) {
         System.out.println(name + " ударил мощно " + target.getName());
-        target.takeDamage(damage * 3);
-    } // 1. Закрывает метод attack
-} // 2. Закрывает класс Boss
+        target.takeDamage(damage * 2);
+    }
+}
